@@ -1,0 +1,1 @@
+Feature: Scss Lint

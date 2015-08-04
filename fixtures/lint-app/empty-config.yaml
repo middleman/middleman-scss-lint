@@ -1,0 +1,10 @@
+---
+linters:
+  ColorKeyword:
+    enabled: false
+  ColorVariable:
+    enabled: false
+  FinalNewline:
+    enabled: false
+  ImportantRule:
+    enabled: false

@@ -1,0 +1,1 @@
+activate :scss_lint#, fail_build: true, config: 'empty-config.yaml'
