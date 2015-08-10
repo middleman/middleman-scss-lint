@@ -16,6 +16,7 @@ module Middleman
             exit(1)
           end
         else
+          logger.info "== SCSSLint succeeded" if result
           watch_and_run
         end
       end
@@ -35,13 +36,14 @@ module Middleman
           end
 
           if changed_scss.length > 0
-            run_linter(changed_scss.map { |r| r[:full_path].to_s })
+            result = run_linter(changed_scss.map { |r| r[:full_path].to_s })
+            logger.info "== SCSSLint succeeded" if result
           end
         end
       end
 
       def run_linter(files_to_lint)
-        puts "== Linting SCSS"
+        logger.info "== Linting SCSS"
 
         cli_args = ['--format', 'JSON']
         cli_args = cli_args + ['--config', options[:config]] if options[:config]
