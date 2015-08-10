@@ -18,4 +18,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'middleman-core'#, '>= 4.0.0'
   spec.add_dependency 'scss_lint', '~> 0.40'
+  spec.add_dependency 'rainbow'
 end
