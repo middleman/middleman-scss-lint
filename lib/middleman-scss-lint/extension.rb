@@ -12,7 +12,7 @@ module Middleman
 
         if app.build?
           if options[:fail_build] && !result
-            $stderr.puts "== SCSSLint failed"
+            logger.error "== SCSSLint failed"
             exit(1)
           end
         else
