@@ -4,7 +4,7 @@ module Middleman
       option :config, nil, 'Path to config file'
       option :fail_build, false, 'If the build should fail if lint does not pass.'
 
-      def after_configuration
+      def ready
         require 'rainbow'
         require 'rainbow/ext/string'
 
