@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = `git ls-files -- {features,fixtures}/*`.split($/)
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'middleman-core'#, '>= 4.0.0'
+  spec.add_dependency 'middleman-core', '>= 4.0.0'
   spec.add_dependency 'scss_lint', '~> 0.40'
   spec.add_dependency 'rainbow'
 end
